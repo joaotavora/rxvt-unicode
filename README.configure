@@ -1,4 +1,25 @@
+DEPENDENCIES
+    
+    This depends on libev and libptytty found at
+
+       https://github.com/yusiwen/libev and
+       https://github.com/yusiwen/libptytty
+
+    resepctively, which I've added to the tree as git submodules.
+    If you've forgotten to clone recursively, make sure you
+
+       git submodule init
+       git submodule update
+
+    Before trying to 'make'.
+
 CONFIGURE OPTIONS
+
+    Ubuntu/debian hint: this links in the C perl lib at build time, so
+    ensure you
+
+       sudo apt install libperl-dev
+
     General hint: if you get compile errors, then likely your configuration
     hasn't been tested well. Either try with "--enable-everything" or use
     the default configuration (i.e. no "--enable-xxx" or "--disable-xxx"
